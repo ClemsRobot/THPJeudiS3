@@ -13,7 +13,7 @@ class Scrapper
     @city_names = []
     @city_depts = []
     @city_emails = []
-    @dept_links = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/corse-du-sud.html"]
+    @dept_links = ["http://annuaire-des-mairies.com/bouches-du-rhone.html", "http://www.annuaire-des-mairies.com/morbihan.html", "http://www.annuaire-des-mairies.com/loire-atlantique.html"]
   end
 
 
@@ -66,7 +66,6 @@ class Scrapper
   def perform # Pour appeler le scrapping
     puts "Attente de scrapping ne quittez pas !"
     recup_link
-
     recup_name
     puts "Le scrapping est maintenant terminé."
   end
