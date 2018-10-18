@@ -12,7 +12,7 @@ class Scrapper
     @city_names = []
     @city_depts = []
     @city_emails = []
-    @dept_links = ["https://www.annuaire-des-mairies.com/corse-du-sud.html", "https://www.annuaire-des-mairies.com/hauts-de-seine.html", "https://www.annuaire-des-mairies.com/seine-saint-denis.html"]
+    @dept_links = ["http://annuaire-des-mairies.com/yvelines.html" ,"https://www.annuaire-des-mairies.com/hauts-de-seine.html", "https://www.annuaire-des-mairies.com/seine-saint-denis.html"]
   end
   def recup_link #Va recuperer lien des villes
     @dept_links.each do |dlink|
@@ -59,6 +59,6 @@ class Scrapper
     puts "Attente de scrapping ne quittez pas !"
     recup_link
     recup_name
-    puts "Fin c'est sur le fichier CSV ."
+    puts "Fin c'est sur le fichier CSV."
   end
 end
