@@ -1,12 +1,12 @@
 
-# PROJET THP SCRAPING/MAILING/MASSFOLLOW
+# PROJET THP SCRAPING/MAILING 
 
 ### Projet réalisé par Alexandre de Temmerman, Thomas Léoty, Clément Castel et Yoann Velasco.
 
 
-Le programme réalisé va :
+Le projet réalisé va :
 
-1 - Récupérer les emails de trois départements de notre choix (92,93,2A).
+1) Récupérer les emails de trois départements de notre choix (78,92 et 93).
 
 2) Envoyer les emails
 Le programme d'envoi d'emails va reprendre chaque colonne de notre CSV/JSON et va envoyer un email à la mairie indiquée avec comme message
@@ -22,6 +22,13 @@ Le programme d'envoi d'emails va reprendre chaque colonne de notre CSV/JSON et v
 ```
 ### Gems utilisés
 
+gem 'rubocop', '~> 0.57.2'
+gem 'pry'
+gem 'gmail'
+gem 'json'
+gem 'gmail'
+gem 'google_drive'
+gem 'google-api-client', '~> 0.8' 
 
 ## ARBORESCENCE :
 
@@ -51,7 +58,20 @@ ultimate_townhall
 
 #### Email envoyé :
 
+Bonjour,
+Je m'appelle Clément etje suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petit groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du code) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.</p>
+
+Déjà 500 personnes sont passées par The Hacking Project. Est-ce que la mairie de " + @townhalls_names[i] + " veut changer le monde avec nous ? 
+
+Charles, co-fondateur de The Hacking Project pourra répondre à toutes vos questions : appelez le 06.95.46.60.80 
+
+Bonne journée à vous !
+    
+         
 #### Nombre de mairies touchés :
+- dans le 92
+- dans le 93
+- dans le 78
 
 #### Handle twitter utilisé :
 
@@ -63,9 +83,4 @@ ultimate_townhall
 
 
 
-la partie d'introduction qui présente l'équipe, explique en un paragraphe les grandes lignes du programme, puis comment l'utiliser ($ bundle install)
-une partie qui explique l'arborescence du dossier, et l'utilité de tous les programmes
-une partie qui dit comment se servir du programme, et quelles sont les gems utilisées
-
-Ce sera un excellent exercice de synthèse : comme tu peux le voir sur Slack, bien se faire comprendre et expliquer ses choix stratégiques est une compétence très utile.
 
