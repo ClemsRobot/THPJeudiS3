@@ -1,5 +1,5 @@
 
-# PROJET THP SCRAPING/MAILING 
+# PROJET THP SCRAPING / MAILING 
 
 ### Projet réalisé par Alexandre de Temmerman, Thomas Léoty, Clément Castel et Yoann Velasco.
 
@@ -56,10 +56,10 @@ ultimate_townhall
 
 ## RESULTATS :
 
-#### Email envoyé :
+### Email envoyé :
 
 Bonjour,
-Je m'appelle Clément etje suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petit groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du code) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.</p>
+Je m'appelle Clément et je suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petit groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du code) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.
 
 Déjà 500 personnes sont passées par The Hacking Project. Est-ce que la mairie de " + @townhalls_names[i] + " veut changer le monde avec nous ? 
 
@@ -68,12 +68,16 @@ Charles, co-fondateur de The Hacking Project pourra répondre à toutes vos ques
 Bonne journée à vous !
     
          
-#### Nombre de mairies touchés :
-- dans le 92
-- dans le 93
-- dans le 78
+### Nombre de mairies touchés :
+- 36 mairies dans le 92
+- 40 mairies dans le 93
+- 262 mairies dans le 78
 
 #### Handle twitter utilisé :
+
+lovecode
+
+
 
 
 
