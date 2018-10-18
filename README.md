@@ -1,5 +1,5 @@
 
-INTRODUCTION
+#INTRODUCTION
 
 Projet réalisé par Alexandre de Temmerman, Thomas Léoty, Clément Castel et Yoann Velasco.
 
