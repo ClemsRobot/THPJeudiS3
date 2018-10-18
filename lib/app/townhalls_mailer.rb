@@ -5,13 +5,13 @@ require 'json'
 class Mailer
 
   def mass_emailing
-    @townhalls_names = [] # Mets les éléments de la deuxième colonne du CSV dans une array
+    @townhalls_names = [] #va mettre array
     CSV.foreach("./db/townhalls.csv") { |row| @townhalls_names << row[1] }
 
     @townhalls_emails = []
     CSV.foreach("./db/townhalls.csv") { |row| @townhalls_emails << row[2] }
 
-    @townhalls_names.each(&:capitalize!) # Met en forme le nom des mairies
+    @townhalls_names.each(&:capitalize!) # nom marie
 
     gmail = Gmail.connect!(ENV["GG_USERNAME"], ENV["GG_PSWD"]) # Connection
 
@@ -19,9 +19,9 @@ class Mailer
     while i < @townhalls_names.length
       gmail.deliver do
         to (@townhalls_emails[i]).to_s
-        subject "Apprendre à coder gratuitement !" # Objet du mail
+        subject "Apprendre à coder gratuitement !" #objet
         html_part do
-          content_type 'text/html; charset=UTF-8' # Contenu
+          content_type 'text/html; charset=UTF-8' #contenu 
           body "<p>Bonjour,</p>
           <br>
           <p>Mon prénom est Clems, je suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petits groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du codage) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.</p>

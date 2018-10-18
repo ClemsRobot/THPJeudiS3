@@ -13,7 +13,7 @@ class Scrapper
     @city_names = []
     @city_depts = []
     @city_emails = []
-    @dept_links = ["http://annuaire-des-mairies.com/bouches-du-rhone.html", "http://www.annuaire-des-mairies.com/morbihan.html", "http://www.annuaire-des-mairies.com/loire-atlantique.html"]
+    @dept_links = [""]
   end
 
 
