@@ -87,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   gmail
+  google-api-client (~> 0.8)
   google_drive
   json
   pry
