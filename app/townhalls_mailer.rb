@@ -10,7 +10,7 @@ class Mailer
 
 
   def base_de_donnee
-    file = File.read('./../../db/townhalls.json')
+    file = File.read('./../db/townhalls.json')
     @donnee = JSON.parse(file)
   end
 
