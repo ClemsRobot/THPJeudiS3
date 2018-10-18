@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 load 'lib/app/get_url.rb'
 load 'lib/app/scraper.rb'
+=======
+>>>>>>> d5be93983581d134f5f7c024852674ac303fefb4
 # frozen_string_literal: true
 
 require 'rubygems'
@@ -14,10 +17,15 @@ Dotenv.load("../../.env")
 load "lib/app/townhalls_adder_to_db.rb"
 load "lib/app/townhalls_follower.rb"
 load "lib/app/townhalls_mailer.rb"
+<<<<<<< HEAD
+=======
+load "lib/app/townhalls_scrapper.rb"
+>>>>>>> d5be93983581d134f5f7c024852674ac303fefb4
 load "lib/views/index.rb"
 load "lib/views/done.rb"
 
 Index.new.launch
+<<<<<<< HEAD
 
 tab = [["https://www.annuaire-des-mairies.com/seine-saint-denis.html", 40],["https://www.annuaire-des-mairies.com/hauts-de-seine.html", 36],["http://www.annuaire-des-mairies.com/val-de-marne.html", 47]]
 
@@ -51,3 +59,5 @@ while (k < 3)
 end
 puts resultat
 transfo_to_csv
+=======
+>>>>>>> d5be93983581d134f5f7c024852674ac303fefb4
