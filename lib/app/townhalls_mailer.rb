@@ -21,7 +21,7 @@ class Mailer
         to (@townhalls_emails[i]).to_s
         subject "Apprendre à coder gratuitement !" #objet
         html_part do
-          content_type 'text/html; charset=UTF-8' #contenu 
+          content_type 'text/html; charset=UTF-8' #contenu
           body "<p>Bonjour,</p>
           <br>
           <p>Mon prénom est Clems, je suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petits groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du codage) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.</p>

@@ -29,7 +29,6 @@ class Scrapper
     end
   end
 
-
   def recup_name #Va récupérer le nom des villes par rapport à l'url
     @city_link.each do |city_url|
       recup_emails(city_url) # Boucle qui récupère toutes les adresses email des mairies des départements
@@ -46,7 +45,6 @@ class Scrapper
       @city_emails << email.text
     end
   end
-
 
   def take_names #Pour retourner l'array du nom des villes
     @city_names
