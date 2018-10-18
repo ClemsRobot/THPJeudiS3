@@ -13,7 +13,7 @@ class Scrapper
     @city_names = []
     @city_depts = []
     @city_emails = []
-    @dept_links = [""]
+    @dept_links = ["https://www.annuaire-des-mairies.com/hauts-de-seine.html"]
   end
 
 

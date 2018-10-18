@@ -18,19 +18,19 @@ class ScrapperTwitter
   def scrap(client)
     col_data = []
 
-    CSV.foreach('db/townhalls.csv') { |row| col_data << row[1] } # prend la 2 ème colone du csv et la met dans le tableau col_data
+    CSV.foreach('db/townhalls.csv') { |row| col_data << row[1] }
     puts col_data
 
-    names = col_data.map{ |x| "mairie " + x } # Pour chaque élément de col data on ajoute mairie devant
+    names = col_data.map{ |x| "mairie " + x }
     @user = []
 
-    names.each do |name| # on itère ce second tableau
+    names.each do |name|
       sleep 1
-      first_result = client.user_search(name)[0] # on utilise client.user_search pour rechercher le name sur twitter et on prend le premier résultat
-      if first_result.nil? # Si ce résultat est nil on ajoute un " " au tableau
+      first_result = client.user_search(name)[0]
+      if first_result.nil?
         puts " "
         @user << " "
-      else # sinon on ajoute le screen_name (le handle) et on affiche le name
+      else
         @user << first_result.screen_name
         puts first_result.name
       end
@@ -40,17 +40,10 @@ class ScrapperTwitter
 
   def write(user)
     fucking_ancien_csv = []
-    # on prend le csv, on prend chaque ligne
-    # et on la met dans un nouveau tableau
-    CSV.foreach('./db/townhalls.csv.csv') do |row|
+      CSV.foreach('./db/townhalls.csv.csv') do |row|
       fucking_ancien_csv << row
     end
-    # on ouvre en écriture le csv
-    # auquel on ajoute l'élément x de l'ancien tableau
-    # et l'élément x du second tableau
-    # cela permet d'écrire une ligne dans le csv
-    # qui contient à la fois l'ancien tableau et le second tableau
-    # bref on ajoute une colone
+
     csv = CSV.open("./db/townhalls.csv.csv", "w")
     (0..(fucking_ancien_csv.length - 1)).each do |x|
       csv << [fucking_ancien_csv[x], user[x]].flatten

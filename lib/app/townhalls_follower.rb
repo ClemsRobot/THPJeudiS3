@@ -19,9 +19,9 @@ class Follower
     def follow_method
       list = []
 
-      @user.each do |user|  # Va creer liste handle
+      @user.each do |user|  #handle
 
-        if user == " " || user.nil? #Renvoie utilisateur si vide
+        if user == " " || user.nil? # si vide recommence
           puts "user doesn't exist"
         else
           puts user

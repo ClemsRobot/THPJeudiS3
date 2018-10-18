@@ -19,9 +19,9 @@ class Index
   def launch
     @user_choice = gets.chomp.to_i
     reload = AppDone.new
-    if @user_choice == 1 # appelle le scrapper.rb qui va chercher les mails des mairies et les mettre dans un csv
-      @csv_ajout = Adding.new # lance le scrapping
-      @csv_ajout.csv_creation # lance la creation du CSV
+    if @user_choice == 1 #scrapper
+      @csv_ajout = Adding.new # scrapping
+      @csv_ajout.csv_creation # creer un fichier csv
       puts "Terminée"
       reload.go_back
     elsif  @user_choice == 2 # lance une recherche des mairies qui disposent d'un compte twitter
