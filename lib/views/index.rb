@@ -8,7 +8,6 @@ class Index
 
     puts "Que veux-tu faire ?"
 
-
     puts "1 pour envoyer dans fichier CSV le scrapping"
     puts "2 si tu veux prendre les twitters de toutes les mairies"
     puts "3 si tu veux envoyer un mail au maires des mairies séléctionnées"
