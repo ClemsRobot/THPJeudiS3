@@ -10,7 +10,7 @@ require 'dotenv'
 Dotenv.load("../../.env")
 
 load "lib/app/townhalls_scrapper.rb"
-load "lib/app/csv_adder.rb"
+load "lib/app/csv.rb"
 load "lib/app/townhalls_adder_to_db.rb"
 load "lib/app/townhalls_mailer.rb"
 load "lib/app/townhalls_follower.rb"
