@@ -5,7 +5,6 @@ require 'open-uri'
 class Scrapper
 
   attr_accessor :city_link, :city_names, :city_depts, :city_emails
-
   attr_reader :dept1_link, :dept2_link, :dept3_link
 
   def initialize
@@ -13,10 +12,8 @@ class Scrapper
     @city_names = []
     @city_depts = []
     @city_emails = []
-    @dept_links = ["https://www.annuaire-des-mairies.com/hauts-de-seine.html"]
+    @dept_links = ["https://www.annuaire-des-mairies.com/corse-du-sud.html", "https://www.annuaire-des-mairies.com/hauts-de-seine.html", "https://www.annuaire-des-mairies.com/seine-saint-denis.html"]
   end
-
-
   def recup_link #Va recuperer lien des villes
     @dept_links.each do |dlink|
       page = Nokogiri::HTML(open(dlink))
@@ -50,21 +47,18 @@ class Scrapper
     @city_names
   end
 
-
   def take_depts #Pour retourner l'array des départements
     @city_depts
   end
-
 
   def take_emails #Pour retourner l'array des mails
     @city_emails
   end
 
-
   def perform # Pour appeler le scrapping
     puts "Attente de scrapping ne quittez pas !"
     recup_link
     recup_name
-    puts "Le scrapping est maintenant terminé."
+    puts "Fin c'est sur le fichier CSV ."
   end
 end
