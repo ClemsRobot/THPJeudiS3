@@ -22,13 +22,13 @@ Le programme d'envoi d'emails va reprendre chaque colonne de notre CSV/JSON et v
 ```
 ### Gems utilisés
 
-gem 'rubocop', '~> 0.57.2'
-gem 'pry'
-gem 'gmail'
-gem 'json'
-gem 'gmail'
-gem 'google_drive'
-gem 'google-api-client', '~> 0.8' 
+- gem 'rubocop', '~> 0.57.2'
+- gem 'pry'
+- gem 'gmail'
+- gem 'json'
+- gem 'gmail'
+- gem 'google_drive'
+- gem 'google-api-client', '~> 0.8' 
 
 ## ARBORESCENCE :
 
