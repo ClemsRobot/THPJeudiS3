@@ -11,7 +11,6 @@ Instruction :
 
 
 
-
 Le programme réalisé va :
 
 1 - Récupérer les emails de trois départements de notre choix (92,93,2A). 
