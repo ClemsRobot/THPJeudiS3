@@ -17,7 +17,6 @@ class ScrapperTwitter
   end
   def scrap(client)
     col_data = []
-
     CSV.foreach('db/townhalls.csv') { |row| col_data << row[1] }
     puts col_data
 
@@ -39,15 +38,14 @@ class ScrapperTwitter
   end
 
   def write(user)
-    fucking_ancien_csv = []
+    new_csv = []
       CSV.foreach('./db/townhalls.csv.csv') do |row|
-      fucking_ancien_csv << row
+      new_csv << row
     end
-
     csv = CSV.open("./db/townhalls.csv.csv", "w")
-    (0..(fucking_ancien_csv.length - 1)).each do |x|
-      csv << [fucking_ancien_csv[x], user[x]].flatten
-      puts [fucking_ancien_csv[x], user[x]].flatten
+    (0..(new_csv.length - 1)).each do |x|
+      csv << [new_csv[x], user[x]].flatten
+      puts [new_csv[x], user[x]].flatten
     end
   end
 
