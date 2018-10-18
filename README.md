@@ -15,7 +15,7 @@ Le programme d'envoi d'emails va reprendre chaque colonne de notre CSV/JSON et v
 - Un premier programme qui va repasser sur chaque élément du CSV/JSON et ajouter une colonne supplémentaire avec le handle twitter
 - Un second programme qui prend la colonne des handle Twitter, et qui follow les users concernés. 
 
-## Instruction :
+## Instruction 
 ```
 - Faites un git clone du fichier https://github.com/ClemsRobot/THPJeudiS3.git
 - Faire un "bundle install" dans le terminal et un "ruby app.rb"
@@ -30,9 +30,9 @@ Le programme d'envoi d'emails va reprendre chaque colonne de notre CSV/JSON et v
 - gem 'google_drive'
 - gem 'google-api-client', '~> 0.8' 
 
-## ARBORESCENCE :
+## ARBORESCENCE 
 
-ultimate_townhall
+
 ├── .gitignore
 ├── .env 
 ├── README.md
@@ -54,9 +54,9 @@ ultimate_townhall
 
 
 
-## RESULTATS :
+## RESULTATS 
 
-### Email envoyé :
+### Email envoyé 
 
 Bonjour,
 Je m'appelle Clément et je suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de notre école est celle du peer-learning, où nous travaillons par petit groupes sur des projets concrets qui font apprendre le code. Le projet du jour consiste à envoyer (avec du code) des emails aux mairies. De cette manière, on espère leur aide pour faire de The Hacking Project une nouvelle manière de se former pour tous.
